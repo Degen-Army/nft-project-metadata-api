@@ -1,0 +1,34 @@
+## Python Metadata API for OpenSea
+
+### About
+
+This is a very simple sample Python Flask app for serving the ERC721 metadata queried by opensea and other nft marketplaces
+
+## Requirements
+
+### Python 3
+You'll need a machine with Python 3 installed.
+
+### Google Cloud Storage
+You'll need a Google Cloud Storage account with a project, bucket, and credentials.
+
+## Setup
+
+Create a .env file with the following:
+
+```
+export GOOGLE_STORAGE_PROJECT="<your_project>"
+export GOOGLE_STORAGE_BUCKET="<your_bucket>"
+```
+
+Place your Google cloud storage credentials in a file called `credentials/google-storage-credentials.json`.
+
+run `pipenv install` then Create a virtualenv with using `pipenv shell` and run `pip install -r requirements.txt`. 
+
+## Running
+
+Run the API with `python app.py` and hit http://localhost:5000/api/creature/1
+
+## Deploying
+
+To deploy on Heroku, set the `GOOGLE_STORAGE_PROJECT` and `GOOGLE_STORAGE_BUCKET` environment variables on your Heroku instance and deploy by pushing to your Heroku remote.
