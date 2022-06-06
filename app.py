@@ -116,7 +116,7 @@ def _add_attribute(existing, attribute_name, options, token_id, display_type=Non
 def _compose_image():
 
    
-    return "https://ipfs.io/ipfs/QmYgfNP82yqsWGC1jDVcB6WWUH5hR1QkEq3stahjUUrSJe"
+    return "https://ipfs.io/ipfs/QmVr5zJrLhnSUC9qmYsrUofGbwNs8DbXhhJk9zg89PxNnw"
 
 
 # def _get_bucket():
